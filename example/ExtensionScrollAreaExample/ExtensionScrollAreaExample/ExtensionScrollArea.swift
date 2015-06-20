@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol ExtensionScrollAreaDelegate {
-    func extensionScrollAreaTargetView(scrollArea: ExtensionScrollArea) -> UIView
+    func extensionScrollAreaTargetView(scrollArea: ExtensionScrollArea) -> UIView?
 }
 
 class ExtensionScrollArea: UIView {

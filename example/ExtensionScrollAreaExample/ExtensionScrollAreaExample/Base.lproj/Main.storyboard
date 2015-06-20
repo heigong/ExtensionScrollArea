@@ -32,10 +32,10 @@
                                     <constraint firstAttribute="height" constant="100" id="h3J-KI-2Yj"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe on the red area, see what happens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBj-6i-4WR">
-                                <rect key="frame" x="42" y="388" width="517" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe on the red area, see what happens" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBj-6i-4WR">
+                                <rect key="frame" x="42" y="388" width="517" height="53"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="mrK-TL-xBz"/>
+                                    <constraint firstAttribute="height" constant="53" id="mrK-TL-xBz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

@@ -49,7 +49,7 @@ class ViewController: UIViewController, ExtensionScrollAreaDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    func extensionScrollAreaTargetView(scrollArea: ExtensionScrollArea) -> UIView {
+    func extensionScrollAreaTargetView(scrollArea: ExtensionScrollArea) -> UIView? {
         return scrollView;
     }
 }
