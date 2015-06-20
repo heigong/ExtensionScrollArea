@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ExtensionScrollAreaExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Yf-H2-U6L">
+                                <rect key="frame" x="150" y="0.0" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="ckG-jG-Bqg"/>
+                                    <constraint firstAttribute="width" constant="300" id="qef-fM-aKA"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDh-8d-LIT" customClass="ExtensionScrollArea" customModule="ExtensionScrollAreaExample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.3796590386" blue="0.39085028620000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="h3J-KI-2Yj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe on the red area, see what happens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBj-6i-4WR">
+                                <rect key="frame" x="42" y="388" width="517" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mrK-TL-xBz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bDh-8d-LIT" secondAttribute="trailing" constant="-16" id="2RY-bn-lgk"/>
+                            <constraint firstItem="6Yf-H2-U6L" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="2fT-1B-uu8"/>
+                            <constraint firstItem="TBj-6i-4WR" firstAttribute="top" secondItem="6Yf-H2-U6L" secondAttribute="bottom" constant="8" id="4WG-QK-G4C"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bDh-8d-LIT" secondAttribute="bottom" id="Nvt-I6-P23"/>
+                            <constraint firstItem="6Yf-H2-U6L" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="UXj-LE-Nii"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Yf-H2-U6L" secondAttribute="trailing" constant="-16" id="UuT-MN-MJ2"/>
+                            <constraint firstItem="TBj-6i-4WR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="26" id="XiA-er-xup"/>
+                            <constraint firstItem="TBj-6i-4WR" firstAttribute="top" secondItem="6Yf-H2-U6L" secondAttribute="bottom" constant="88" id="b6R-De-GHR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TBj-6i-4WR" secondAttribute="trailing" constant="25" id="eSC-oJ-z6g"/>
+                            <constraint firstAttribute="centerX" secondItem="6Yf-H2-U6L" secondAttribute="centerX" id="opA-2v-GJP"/>
+                            <constraint firstItem="bDh-8d-LIT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="xsa-i4-M4t"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UXj-LE-Nii"/>
+                                <exclude reference="UuT-MN-MJ2"/>
+                                <exclude reference="4WG-QK-G4C"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="extensionScrollArea" destination="bDh-8d-LIT" id="nHm-uy-vCo"/>
+                        <outlet property="scrollView" destination="6Yf-H2-U6L" id="gZX-hc-AP8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
